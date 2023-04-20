@@ -1,0 +1,227 @@
+html {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 95vh;
+    margin-bottom: 1em;
+}
+
+.result-con {
+    height: 40%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-top: none;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    color: hsla(0, 0%, 100%);
+}
+.result-title {
+    flex: 1 auto;
+    margin: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 100%, .7);
+    font-weight: 800;
+    padding: .5rem;
+}
+.result-score {
+    flex: 3 auto;
+    margin: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-score-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))
+}
+.result-score-circle p:nth-child(1) {
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+.result-score-circle p:nth-child(2) {
+    font-size: .8rem;
+    color: hsla(0, 0%, 100%, .4);
+    margin-top: .5em;
+}
+.result-desc {
+    flex: 1 auto;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+.result-desc h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: .5em;
+}
+.result-desc p {
+    color: hsla(0, 0%, 100%, .5);
+    padding: .7em;
+    text-align: center;
+}
+
+.summary-con {
+    height: 60%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-title {
+    flex: 1 auto;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+    padding: 1em .3em;
+}
+.summary-box-con {
+    flex: 4 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1em;
+    margin-bottom: 1em;
+}
+
+.box-1 {
+    background-color: hsla(0, 98%, 68%, .1);
+}
+.box-2 {
+    background-color: hsla(39, 100%, 56%, .1);
+}
+.box-3 {
+    background-color: hsla(166, 100%, 37%, .1);
+}
+.box-4 {
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.box-left-1 {
+    color: hsl(0, 100%, 67%);
+}
+.box-left-2 {
+    color: hsl(39, 100%, 56%);
+}
+.box-left-3 {
+    color: hsl(166, 100%, 37%);
+}
+.box-left-4 {
+    color: hsl(234, 85%, 45%);
+}
+
+.box-left-1::before {
+    content: url(./assets/images/icon-reaction.svg);
+    display: inline;
+    margin-right: .2em;
+}
+.box-left-2::before {
+    content: url(./assets/images/icon-memory.svg);
+    display: inline;
+    margin-right: .2em;
+}
+.box-left-3::before {
+    content: url(./assets/images/icon-verbal.svg);
+    display: inline;
+    margin-right: .2em;
+}
+.box-left-4::before {
+    content: url(./assets/images/icon-visual.svg);
+    display: inline;
+    margin-right: .2em;
+}
+.summary-btn-con {
+    flex: 1 auto;
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+    
+}
+.summary-box {
+    padding: 1em 1em;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border-radius: .5em;
+    font-size: 0.9em;
+}
+
+.box-left {
+    font-weight: bold;
+}
+.box-right {
+    margin-left: auto;
+    font-weight: bold;
+}
+.box-right span {
+    color: rgba(0, 0, 0, .5)
+}
+.summary-btn {
+    width: 100%;
+    padding: 1.3em 1em;
+    border-radius: 3em;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background: hsl(224, 30%, 27%);
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .result-con {
+        width: 20%;
+        height: 60%;
+        border-radius: 2em;
+    }
+    .summary-con {
+        width: 25%;
+        height: 60%;
+
+    }
+    .summary-title {
+        margin-top: -0.3rem;
+        margin-bottom: 1em;
+    }
+    .summary-box-con {
+        margin-top: -1em;
+        vertical-align: middle;
+        flex: 1 auto;
+        margin-left: 1.5rem;
+    }
+    .summary-box {
+        margin: .5rem 0;
+        width: 80%;
+        padding: .5em 1em;
+        font-size: .8rem;
+        height: 40px;
+    }
+    .summary-btn-con {
+        margin-left: 1.5rem;
+    }
+    .summary-btn {
+        width: 90%;
+    }
+}
